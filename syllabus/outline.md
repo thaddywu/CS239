@@ -23,7 +23,8 @@ one framework-survey week.
 - [SWE-agent](../literature/papers/swe-agent.md)
 - [CodeAct](../literature/papers/codeact.md)
 
-**Short background:** ReAct. **Optional:** OpenHands.
+**Short background:** ReAct. **Optional:** OpenHands;
+[Murakkab](../literature/papers/murakkab.md) for the deployment/runtime layer.
 
 **Debate:** Should an agent receive a narrow LM-specific interface with concise
 feedback and guardrails, or a maximally compositional programming language? Map
@@ -63,7 +64,9 @@ Why is “agentless” not the same as “non-agentic computation”?
 - [CodaMOSA](../literature/papers/codamosa.md)
 - [ImpossibleBench](../literature/papers/impossiblebench.md)
 
-**Short background:** QuickCheck. **Optional:** CoverUp.
+**Short background:** QuickCheck. **Optional:** CoverUp;
+[PropertyGPT](../literature/papers/propertygpt.md);
+[Agentic Specification Generator](../literature/papers/agentic-specification-generator.md).
 
 **Debate:** Coverage and test passage are feedback signals, not semantic truth.
 When should a system synthesize examples, properties, or metamorphic relations;
@@ -77,7 +80,8 @@ and what should it do when tests conflict with the stated requirement?
 - [CodePlan](../literature/papers/codeplan.md)
 
 **Short background:** [Software Reflexion Models](../literature/papers/software-reflexion-models.md).
-**Optional:** [GPTScan](../literature/papers/gptscan.md); RepoGraph.
+**Optional:** [GPTScan](../literature/papers/gptscan.md); RepoGraph;
+[SemRef](../literature/papers/semref.md), with its proceedings-record caveat.
 
 **Debate:** IRIS lets the model supply missing specifications while analysis
 supplies reachability; CodePlan lets analysis create future edit obligations.
@@ -89,14 +93,17 @@ would count as actual architecture recovery.
 **Primary**
 
 - [LeanDojo](../literature/papers/lean-dojo.md)
-- [LEGO-Prover](../literature/papers/lego-prover.md)
+- [PAT-Agent](../literature/papers/pat-agent.md)
 
 **Optional:** [Draft, Sketch, and Prove](../literature/papers/draft-sketch-prove.md);
-[AlphaGeometry](../literature/papers/alphageometry.md); *Don't Trust: Verify*.
+[LEGO-Prover](../literature/papers/lego-prover.md);
+[AlphaGeometry](../literature/papers/alphageometry.md); *Don't Trust: Verify*;
+PropertyGPT or Agentic Specification Generator for software contracts.
 
 **Debate:** Why do typed state, small executable actions, scoped libraries, and
-kernel checking make theorem proving a better agent runtime than a shell? Is a
-verified lemma library the right model for long-term agent memory?
+independent checking make formal tools better agent runtimes than a shell? A
+checker proves a generated model internally consistent; what evidence shows the
+model faithfully represents the informal system?
 
 ## Week 7 — Multi-agent communication and fault containment
 
@@ -105,8 +112,10 @@ verified lemma library the right model for long-term agent memory?
 - [Information Propagation Effects of Communication Topologies](../literature/papers/information-propagation-topologies.md)
 - [Resilience with Faulty Agents](../literature/papers/multi-agent-resilience.md)
 
-**Optional:** Du et al. debate; sparse communication topology. Use MetaGPT and
-ChatDev only as short rejected contrasts.
+**Optional:** Du et al. debate; sparse communication topology;
+[G-Designer](../literature/papers/g-designer.md) for learned graph design;
+[SAGA](../literature/papers/saga.md) for authorization. Use MetaGPT and ChatDev
+only as short rejected contrasts.
 
 **Debate:** When does another agent add information rather than another sample
 from the same error distribution? Compare graph sparsity, hierarchy, Challenger,
@@ -134,26 +143,31 @@ rollback, or compensating action would be required after a real tool side effect
 
 **Required background excerpt:** Saltzer and Schroeder. **Evaluation context:**
 [AgentDojo](../literature/papers/agentdojo.md). **Watch:** RefineAct after final ASE
-2026 proceedings/artifact review.
+2026 proceedings/artifact review. **Optional architectures:**
+[ACE](../literature/papers/ace.md); [SAGA](../literature/papers/saga.md).
 
 **Debate:** Compare information/control-flow separation and capabilities with a
 general action-policy monitor. State each trusted computing base, policy gap,
 utility cost, and claim that is actually guaranteed.
 
-## Week 10 — Frontier case clinic and project design review
+## Week 10 — Memory, persistent state, and frontier synthesis
 
-There is deliberately no mandatory “best paper” for systems/science/hardware:
-the search found strong applications but insufficiently isolated mechanisms.
-Student groups choose one case—Coscientist, ChemCrow, MLAgentBench, ChatEDA, or
-OpenHands—and submit:
+**Primary**
 
-1. an architecture and authority diagram;
-2. a failure/threat model;
-3. an independent validation and recovery design;
-4. a matched non-agent or simpler-pipeline baseline;
-5. the experiment that could falsify the system's central claim.
+- [Agentic Memory](../literature/papers/agentic-memory.md)
+- [How Memory Management Impacts LLM Agents](../literature/papers/memory-management-impact.md)
 
-The second half is project/document review using the same rubric.
+**Short background:** MemGPT. **Cross-list:** LEGO-Prover as verified memory.
+
+**Debate:** Is learned store/retrieve/update/delete behavior enough to call
+memory a subsystem? Specify entry invariants, provenance, invalidation,
+confidentiality, and rollback for a memory whose retrieved errors change future
+actions. Distinguish answer-task rewards from deployable quality signals.
+
+The second half retains the frontier clinic. Groups choose Coscientist, ChemCrow,
+MLAgentBench, ChatEDA, OpenHands, or Murakkab and submit an authority diagram,
+failure model, independent validation/recovery design, matched simpler baseline,
+and a falsifying experiment.
 
 ## Changes from the initial hypothesis
 
@@ -167,3 +181,13 @@ The second half is project/document review using the same rubric.
   mechanism-comparison literature appears.
 - Elevated runtime enforcement/security to a full week because 2026 work now
   supplies architectural mechanisms, not only attack benchmarks.
+- Added a focused memory week after ACL 2026 supplied complementary constructive
+  policy learning and controlled failure evidence; MemGPT is now background.
+- Replaced LEGO-Prover with PAT-Agent as Week 6's second primary to diversify
+  theorem-proving and model-checking/autoformalization mechanisms; LEGO-Prover
+  remains the verified-memory cross-reading.
+- Kept property-based testing embedded: formal property/specification generation
+  is now real, but full generator–property–shrinker maintenance is not mature.
+- Kept architecture recovery merged despite SemRef, and kept failure recovery as
+  a gap-driven week because no transactional agent-runtime counterexample was
+  found.

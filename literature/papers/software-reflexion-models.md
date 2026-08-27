@@ -1,8 +1,8 @@
-# Software Reflexion Models: Bridging Source and High-Level Models
+# Software Reflexion Models
 
 ## Decision
 
-**Strong foundational candidate.** Primary metadata: [DBLP record for FSE 1995](https://dblp.org/rec/conf/sigsoft/MurphyNS95).
+**Strong foundational candidate.** Primary metadata: [ACM FSE 1995 DOI](https://doi.org/10.1145/222124.222136).
 
 ## Problem and mechanism
 

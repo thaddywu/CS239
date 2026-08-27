@@ -64,3 +64,43 @@ Crash-Only is superseded by Microreboot for a primary systems excerpt.
 - Recovery under a faulty verifier or corrupted memory.
 - Transfer from recovery-oriented computing, workflow engines, and distributed
   systems into contemporary agent runtimes.
+
+## Due diligence audit — 2026-08-27
+
+### Previously believed
+
+Agent reliability papers mainly revise text or retry calls; mature work on
+rollback, checkpoint/restart, idempotency, compensation, and exactly-once
+external effects had not transferred into LLM-agent runtimes.
+
+### New papers checked
+
+- Targeted 2022–2026 OSDI, SOSP, NSDI, EuroSys, ASPLOS, ATC, ICSE, FSE, ASE,
+  and workflow/recovery terminology rather than general “self-correction.”
+- Checked Murakkab and recent long-running agent-runtime work for checkpoints,
+  replay, or compensating actions; Murakkab optimizes execution but does not
+  recover external side effects.
+- Checked recent transaction/undo/replay systems such as intermittent-computing
+  work as possible predecessors; no direct LLM-agent adaptation survived the
+  relevance threshold.
+
+### Important additions
+
+None. The ACL memory-management study is relevant to corrupted persistent state,
+but it studies record addition/deletion rather than transactional tool recovery.
+
+### Stronger replacements
+
+No stronger peer-reviewed alternative found in this audit. Microreboot remains
+the most useful systems bridge, not evidence that agent recovery is solved.
+
+### Judgment
+
+**UPHELD.**
+
+### Why
+
+The targeted systems/workflow search did not uncover a peer-reviewed LLM-agent
+runtime with explicit checkpoint boundaries, durable logs, idempotency keys,
+compensating actions, or exactly-once side-effect semantics. This absence is an
+important negative result and should remain a central Week 8 design exercise.

@@ -1,33 +1,51 @@
 # Coverage Matrix
 
 “Explored level” measures this repository's search coverage, not the field's
-maturity. **High** requires expanded terminology, multiple venue families,
-backward/forward citation paths, full-method inspection of leading papers, and
-comparison against competing mechanisms. Counts include cross-listed papers.
+maturity. **Audit confidence** asks a different question: after adversarially
+searching likely omissions and publication changes, how likely is the current
+syllabus judgment to survive another focused check? Counts include cross-listed
+strong candidates and therefore are not additive.
 
-| Topic | Explored level | Strong candidates | Literature maturity | Evidence covered | Major gap / next action |
-|---|---|---:|---|---|---|
-| Agent architecture and runtime | high | 4 | high for interfaces; medium for state | ReAct/Toolformer lineage; ICML/ICLR/NeurIPS runtime and ACI papers; action-space and verifier comparison | Search peer-reviewed protocol semantics, transactions, provenance, and durable state |
-| Multi-agent systems | high | 2 | medium | Debate baseline/negative control; sparse and learned topology; causal propagation; ICML fault injection; role-workflow rejections | Correlated/shared-model faults, blackboard consistency, equal-compute controls, Byzantine tool users |
-| Testing and program repair | high | 5 | high | ICSE/ISSTA/FSE repair; SWE-bench lineage; search/coverage hybrids; property-testing foundation; oracle exploitation | Durable property/invariant generation, independent patch validation, non-Python repositories |
-| Program analysis | medium | 3 | medium | ICLR/ICSE/ISSTA; taint specification mining, property matching, dynamic partial execution; links into repair/planning | Broaden beyond security and state explicit soundness/false-negative contracts |
-| Formal methods and theorem proving | high | 4 | high | ICLR/NeurIPS/Nature; Lean interaction, premise retrieval, sketches, growing libraries, symbolic closure, autoformalization | Faithful statement formalization and repository-scale software contracts |
-| Architecture and repository understanding | medium | 2 | high for retrieval; low for agentic recovery | Repo retrieval/graphs, FSE change planning, classic reflexion-model citation path | Find systems that propose and independently check architectural hypotheses/mappings |
-| Failure recovery and reliability | medium | 4 | medium for critique; low for side effects | Reflexion/CRITIC/negative self-correction; multi-agent fault injection; OSDI/HotOS recovery lineage | Checkpoint/replay, idempotency, compensating actions, verifier failure, durable external state |
-| Security and policy enforcement | high | 5 | medium/high and rapidly moving | ACL/ICLR/NeurIPS attacks and testbeds; SaTML information flow/capabilities; ICSE/ASE runtime policies; classic protection principles | Delegation/revocation, policy composition, memory security, availability, common evaluations |
-| Systems, science, and hardware | medium | 0 | application-rich; mechanism-thin | Nature chemistry loops; ICML experiment benchmark; TCAD EDA; workshop/preprint dead ends | Citation-chain follow-up for transactional labs and formally validated EDA; no standalone week yet |
-| Agent-based software development | high | 4 | high but benchmark-concentrated | ACI, open runtime, SE-guided repair/planning, deterministic pipeline controls, multi-agent workflow rejections | Human oversight, ambiguous requirements, CI/deployment/rollback, cross-language evaluation |
+| Topic | Explored level | Strong candidates | Literature maturity | Audit confidence | Judgment | Last audited | Decision-relevant evidence / remaining gap |
+|---|---|---:|---|---|---|---|---|
+| Agent architecture / harness | high | 3 | high | high | standalone/core | 2026-08-27 | SWE-agent and CodeAct isolate opposite interface choices; Murakkab adds a systems-runtime layer; transactional state remains missing |
+| Tools and tool use | high | 3 | high | high | standalone/core | 2026-08-27 | Toolformer learns calls, CodeAct composes them, SWE-agent constrains them; protocol versioning/capability discovery remain thin |
+| Planning and execution | high | 2 | medium/high | medium | embed/core | 2026-08-27 | LLM-Modulo and CodePlan give verifier- and dependency-driven alternatives; planning papers still confound model/value quality |
+| Memory / context management | high | 3 | high for policy; low for transactions | high | **standalone now viable** | 2026-08-27 | AgeMem plus the experience-following study supply constructive and negative primaries; LEGO-Prover adds verified memory; cross-session security remains open |
+| Multi-agent systems | high | 3 | medium/high | high | standalone/core | 2026-08-27 | Causal propagation, fault injection, learned topology, and SAGA authorization cover distinct mechanisms; shared-state consistency remains missing |
+| Testing | high | 3 | high | high | standalone/core | 2026-08-27 | CodaMOSA, ImpossibleBench, and formal-property generation separate search, feedback, and oracle quality |
+| Program repair | high | 3 | high | high | mature/core | 2026-08-27 | AutoCodeRover, RepairAgent, and Agentless retain the best autonomy spectrum; no new generic SWE-bench agent changed it |
+| Runtime validation / verification | high | 2 | medium/high, fast-moving | medium | standalone with security/formal | 2026-08-27 | AgentSpec policies and PAT counterexample repair provide different monitors; RefineAct remains accepted/in press |
+| Property-based testing | high | 2 | medium for properties; low for full PBT | high | embed, not standalone | 2026-08-27 | PropertyGPT and MSG generate reusable checked properties/invariants, but generator synthesis, shrinking, and long-term maintenance are not mature |
+| Program analysis | medium | 3 | medium | medium | merge with repository/formal | 2026-08-27 | IRIS/GPTScan remain strongest direct hybrids; MSG and SemRef broaden analysis roles without defining general soundness contracts |
+| Formal methods | high | 5 | high | high | standalone/core | 2026-08-27 | Proof environments, verified artifacts, model checking, property generation, and symbolic closure now give real mechanism diversity |
+| Autoformalization | high | 3 | medium/high | medium | standalone within formal week | 2026-08-27 | PAT-Agent, PropertyGPT, and MSG add checker-guided synthesis; fidelity to informal intent remains the central unresolved threat |
+| Theorem proving | high | 4 | high | high | standalone/core | 2026-08-27 | LeanDojo, Draft–Sketch–Prove, LEGO-Prover, and AlphaGeometry remain technically deep and complementary |
+| Software/system architecture recovery | high | 1 | low/medium | medium | merge; standalone premature | 2026-08-27 | SemRef is a direct modern counterexample, but one refinement mechanism plus a missing final proceedings record does not form a mature cluster |
+| Failure recovery / self-healing | high | 2 | medium for answer retry; low for side effects | medium | cross-cutting, gap-driven | 2026-08-27 | Targeted systems/workflow search found no agent checkpoint/replay, idempotency, saga compensation, or exactly-once semantics |
+| Agent security | high | 5 | high for injection/evaluation; medium for systems | high | standalone/core | 2026-08-27 | AgentDojo, CaMeL, AgentSpec, ACE, and SAGA span benchmark, dataflow, monitor, trusted-plan, and authorization designs |
+| Authorization / information flow / policy enforcement | high | 4 | medium/high | high | standalone within security | 2026-08-27 | CaMeL/ACE capabilities and dataflow, AgentSpec policy monitoring, and SAGA tokens are distinct; OS sandbox enforcement remains undercovered |
+| Agent-based software development | high | 4 | high but benchmark-concentrated | high | cross-course thread | 2026-08-27 | SWE-agent, AutoCodeRover, Agentless, and CodePlan retain their roles; human oversight, CI/deployment, and rollback remain weak |
+| Agents for systems / science / hardware | medium | 1 | high for workflow serving; application-rich elsewhere | medium | mixed; no combined core week | 2026-08-27 | Murakkab fixes the systems-runtime omission; science/hardware still offer domain cases more than isolated general mechanisms |
 
 ## Coverage interpretation
 
-- **Best-supported required weeks:** interfaces/runtime; testing and repair;
-  formal environments; multi-agent topology/faults; security enforcement.
-- **Best merged topic:** program analysis + repository change planning + the
-  distinction between retrieval and architecture recovery.
-- **Underdeveloped despite search:** transactional failure recovery; true
-  agentic architecture recovery; hardware agents with formal feedback.
+- **Best-supported required weeks:** interfaces/runtime; testing, repair, and
+  oracle quality; formal environments; multi-agent topology/faults; security
+  enforcement.
+- **Newly viable focused session:** memory/state, using AgeMem as the constructive
+  mechanism and the ACL experience-following study as the failure analysis.
+- **Best merged topics:** program analysis + repository planning + architecture-
+  recovery critique; strict property-based testing + formal specification
+  generation rather than pretending they are the same subfield.
+- **Judgments that survived an adversarial search:** repair's current primary
+  pair, multi-agent's topology/fault pair, and the absence of transactional
+  agent failure recovery.
+- **Most fragile areas:** architecture recovery (one direct 2026 candidate with
+  unresolved proceedings metadata), new runtime-enforcement work, and science/
+  hardware follow-ups that may migrate into systems venues.
 - **Cross-cutting missing abstraction:** specification authority—what happens
-  when instructions, tests, static analyses, policies, and observed behavior
-  disagree.
+  when instructions, tests, generated properties, static analyses, policies,
+  stored experience, and observed behavior disagree.
 
-Last substantive update: 2026-08-26.
+Last substantive update: 2026-08-27.

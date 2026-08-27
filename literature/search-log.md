@@ -167,3 +167,89 @@ The core weeks now have competing mechanisms and negative controls, while weak
 areas have explicit gaps rather than filler. Additional broad search would add
 volume without changing the initial syllabus. The next iteration should start
 from the gap cells in `coverage.md`, not repeat this landscape search.
+
+## 2026-08-27 — Due-diligence / omission audit
+
+### Starting point and adversarial questions
+
+Read the canonical CSV, all topic maps, coverage, earlier search decisions,
+syllabus, and candidate notes before searching. The audit tried to falsify the
+least stable conclusions: no standalone memory week, no reusable LLM-generated
+properties, no direct modern architecture recovery, no transactional agent
+recovery, adequate enforcement-design diversity, and stable repair/multi-agent
+primary choices.
+
+### Venue and citation routes
+
+- Inspected 2022–2026 programs/proceedings across ICSE, FSE, ASE, ISSTA, SANER,
+  ICSME; PLDI, POPL, OOPSLA, CAV, TACAS, FM; SOSP, OSDI, NSDI, EuroSys, ASPLOS,
+  ATC; S&P, USENIX Security, CCS, NDSS, SaTML; and NeurIPS, ICML, ICLR, ACL,
+  EMNLP, NAACL, AAAI, IJCAI.
+- Followed citation/author chains from MemGPT, LEGO-Prover, QuickCheck,
+  CodaMOSA, Agentless, CodePlan, Software Reflexion Models, Microreboot, CaMeL,
+  AgentSpec, and the current multi-agent topology/fault papers.
+- Expanded terminology to property/specification/invariant generation,
+  autoformalization/model repair, architecture refinement, dependency graphs,
+  durable workflows, authorization, and information flow; discovery did not
+  depend on “agent” appearing in a title.
+
+### Full-method inspections added to the corpus
+
+Inspected method, setup, a central result/ablation, and limitations for ten
+papers: AgeMem; the ACL memory-management empirical study; PropertyGPT; Agentic
+Specification Generator; PAT-Agent; SemRef; Murakkab; ACE; SAGA; and G-Designer.
+All ten are recorded in `papers.csv` with decision notes. Eight are strong
+candidates; SemRef and G-Designer are candidates because the former has a
+proceedings-record caveat and the latter is less explanatory than the existing
+topology primary.
+
+### Screened but not added
+
+- Memory-R1 and HiAgent overlap the stronger ACL memory pair; RMM, THEANINE,
+  Hindsight, ARTEM, and CA3Mem are narrower/domain-specific.
+- Event-B Agent and *Automated Lemma Discovery in Agentic Program Verification*
+  are important upcoming successors without final proceedings records at the
+  audit date.
+- IGSIL and GraphCoder concern localization/context graphs rather than explicit
+  architecture recovery; SANER 2026 non-agent recovery work strengthens the
+  baseline but not the agent-mechanism cluster.
+- Amur, CausalRepair, and AROP add repair/analysis variants but do not challenge
+  Agentless's structured-pipeline control or change the selected repair pair.
+- IsolateGPT is ACE's predecessor; Rennervate is a model-level security design;
+  neither adds a more useful course role than the retained architecture set.
+- Recent scientific-agent and AFM evaluations add useful domain failures but no
+  reusable runtime mechanism beyond the selected cases.
+
+### Publication and metadata audit
+
+- Rechecked title, author order, year, venue, publication status, and URL for all
+  48 pre-existing `candidate`/`strong_candidate` records against proceedings,
+  publisher metadata, OpenReview, ACL Anthology, USENIX, or DOI/Crossref records.
+- Corrected the exact ICSE title to *RepairAgent: An Autonomous, LLM-Based Agent
+  for Program Repair*.
+- Corrected the FSE 1995 title to *Software Reflexion Models* and replaced the
+  DBLP URL with ACM DOI `10.1145/222124.222136`; the former subtitle did not
+  belong to that proceedings title.
+- Confirmed MemGPT remains a preprint, CaMeL is SaTML 2026, AgentSpec is an ICSE
+  2026 research-track paper, and RefineAct should remain `accepted_in_press`.
+- Recorded SemRef as `peer_reviewed_program_no_proceedings_record`: the ICSE
+  research-track/program record is authoritative, but no final DOI/proceedings
+  record was found. No venue was inferred from arXiv alone.
+
+### Judgments after attempted falsification
+
+- **Overturned:** memory/context management now supports a focused week.
+- **Weakened:** reusable property/specification generation is real, but strict
+  QuickCheck-style PBT is not a mature agent subfield; direct architecture
+  recovery exists but is not yet a diverse standalone cluster; systems runtime
+  is no longer mechanism-thin because of Murakkab.
+- **Upheld:** repair primaries; multi-agent topology/fault primaries; formal and
+  security standalone weeks; program-analysis responsibility split; coding
+  agents as a cross-course thread; no mature transactional agent recovery.
+
+### Stop condition
+
+The search stopped when new results were either mechanism duplicates, weaker
+publication types, domain applications, or papers that would not change a
+candidate comparison or syllabus slot. The audit added ten decision-relevant
+papers rather than rebuilding the landscape.

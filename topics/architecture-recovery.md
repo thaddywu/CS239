@@ -37,9 +37,16 @@ divergence, and absence. The human supplies the hypothesis and mapping; the tool
 makes disagreement explicit. This is the standard that current “understanding”
 claims usually do not meet.
 
+[SemRef](../literature/papers/semref.md) is the first direct modern counterexample
+found in this audit: it takes explicit recovered module structures from existing
+tools, uses LLM semantics plus dependencies to refine them, and evaluates the
+result against architecture ground truth. It refines a hypothesis rather than
+independently discovering and checking design intent.
+
 ## Reading decisions
 
 **Strong:** CodePlan; Software Reflexion Models as foundational contrast.
+**Direct modern candidate:** SemRef, with a publication-record caveat.
 
 **Other candidates:** RepoGraph, RepoCoder. Agentless and AutoCodeRover are
 cross-listed under repair.
@@ -51,7 +58,7 @@ validation procedure.
 ## Current assessment
 
 - Literature maturity: **high for repository context, medium for dependency-aware
-  planning, low for genuinely agentic architecture recovery**.
+  planning, and low/medium for genuinely agentic architecture recovery**.
 - Technical depth: very high in CodePlan and classical reflexion models.
 - Course suitability: high only after merging repository planning with the
   architecture-recovery critique; not enough evidence for a standalone modern
@@ -67,3 +74,45 @@ validation procedure.
   incremental dependency/architecture updates.
 - Forward/backward citation search around reflexion models plus ICSE/FSE/ASE
   architecture-recovery tracks using LLM terminology without assuming agency.
+
+## Due diligence audit — 2026-08-27
+
+### Previously believed
+
+Repository retrieval and change-impact planning were mature, but modern agentic
+architecture recovery lacked an explicit architecture plus evaluation against
+conformance or ground truth.
+
+### New papers checked
+
+- Fully inspected SemRef (ICSE 2026 research track).
+- Checked IGSIL (ASE 2025), GraphCoder (ASE 2024), and *Beyond Lexical:
+  Functional Semantics and Fusion for Precise Architecture Recovery* (SANER
+  2026). These cover issue localization/code graphs or stronger non-agent
+  recovery baselines, but not the same direct mechanism.
+- Rechecked the classical reflexion-model citation path and current architecture
+  tracks, including dependency graphs, design recovery, and conformance terms.
+
+### Important additions
+
+[SemRef](../literature/papers/semref.md): iterative semantic/dependency refinement
+of recovered module structures; **high technical depth** and suitable as a
+modern primary/contrast after its proceedings record is resolved.
+
+### Stronger replacements
+
+SemRef is a stronger direct architecture-recovery reading than RepoGraph or
+RepoCoder, but it does not replace CodePlan for change-impact planning or
+Software Reflexion Models for explicit discrepancy semantics.
+
+### Judgment
+
+**WEAKENED.**
+
+### Why
+
+The categorical claim that modern work stops at retrieval is false: SemRef
+directly improves recovered architectures and tests against ground truth. One
+LLM-assisted refinement system does not yet provide enough independent
+mechanisms for a standalone week, and its final proceedings/DOI record was not
+located. Repository understanding remains well supported as a merged module.

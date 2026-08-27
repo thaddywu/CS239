@@ -36,10 +36,19 @@ SelfPiCo predicts values/types for missing dependencies so partial Python code
 can execute. This is a technically interesting dynamic-analysis use, though its
 “agent” character is weaker and its course fit narrower.
 
+### Analysis validates generated specifications and structures
+
+- [Agentic Specification Generator](../literature/papers/agentic-specification-generator.md)
+  selectively inlines callees and invokes Move Prover while generating clauses.
+- [PropertyGPT](../literature/papers/propertygpt.md) uses compiler/static-analysis
+  diagnostics to repair formal properties before a dedicated prover checks them.
+- [SemRef](../literature/papers/semref.md) uses dependency analysis to constrain
+  semantic refinement of recovered module structures.
+
 ## Reading decisions
 
-**Strong:** IRIS; GPTScan. Cross-list AutoCodeRover or CodePlan depending on the
-week's focus.
+**Strong:** IRIS; GPTScan. Cross-list AutoCodeRover, CodePlan, or Agentic
+Specification Generator depending on the week's focus.
 
 **Other candidate:** SelfPiCo.
 
@@ -63,3 +72,45 @@ not address the program-analysis question.
 - Static-analysis false-negative studies, not only false-positive reduction.
 - Transfer beyond security: types, concurrency, resource leaks, performance, and
   architecture conformance.
+
+## Due diligence audit — 2026-08-27
+
+### Previously believed
+
+IRIS and GPTScan formed a strong security-centered neuro-symbolic pair, but the
+cluster was narrow outside vulnerability analysis and lacked explicit contracts
+for LLM-induced unsoundness.
+
+### New papers checked
+
+- Fully inspected Agentic Specification Generator, PropertyGPT, and SemRef for
+  the points where static/dependency analysis changes an agent decision.
+- Checked AROP (ICSE 2026), Amur (ASE 2025), CausalRepair (ISSTA 2026), and
+  recent resource-flow/slicing work; none supplied a more general analysis-agent
+  contract than the current primaries.
+- Rechecked program-analysis and verification sessions in ICSE, FSE, ASE, ISSTA,
+  PLDI, POPL, OOPSLA, CAV, TACAS, and FM programs.
+
+### Important additions
+
+Agentic Specification Generator is the most important cross-listing: specialized
+generation is constrained by inlining and prover feedback; **very high technical
+depth**. PropertyGPT and SemRef broaden the validator roles but remain domain
+specific.
+
+### Stronger replacements
+
+No stronger peer-reviewed alternative found in this audit for IRIS's repository-
+scale taint-specification split or GPTScan's scenario-plus-analysis pipeline.
+
+### Judgment
+
+**UPHELD.**
+
+### Why
+
+The new papers broaden program analysis into specification and architecture
+artifacts, but they reinforce rather than overturn the core responsibility split:
+the model proposes semantic facts and deterministic analysis checks a narrower
+relation. The topic supports a merged neuro-symbolic week, not a broad standalone
+survey of every analysis family.

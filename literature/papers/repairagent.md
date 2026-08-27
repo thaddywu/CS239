@@ -1,4 +1,4 @@
-# RepairAgent: An Autonomous LLM-Based Agent for Program Repair
+# RepairAgent: An Autonomous, LLM-Based Agent for Program Repair
 
 ## Decision
 
