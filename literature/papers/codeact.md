@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ICML 2024 / PMLR](https://proceedings.mlr.press/v235/wang24h.html).
+**Selected for the final 20-paper-day list.** Primary source: [ICML 2024 / PMLR](https://proceedings.mlr.press/v235/wang24h.html).
 
 ## Problem and mechanism
 

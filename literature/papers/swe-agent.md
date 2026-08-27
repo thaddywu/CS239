@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate and likely week-one anchor.** Primary source: [NeurIPS 2024 proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html).
+**Selected for the final 20-paper-day list.** Primary source: [NeurIPS 2024 proceedings](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html).
 
 ## Problem and mechanism
 

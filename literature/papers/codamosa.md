@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ICSE 2023 program](https://conf.researchr.org/details/icse-2023/icse-2023-technical-track/132/CodaMOSA-Escaping-Coverage-Plateaus-in-Test-Generation-with-Pre-trained-Large-Langua).
+**Selected for the final 20-paper-day list.** Primary source: [ICSE 2023 program](https://conf.researchr.org/details/icse-2023/icse-2023-technical-track/132/CodaMOSA-Escaping-Coverage-Plateaus-in-Test-Generation-with-Pre-trained-Large-Langua).
 
 ## Problem and mechanism
 

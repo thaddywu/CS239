@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ACL 2026 proceedings](https://aclanthology.org/2026.acl-long.981/).
+**Selected for the final 20-paper-day list.** Primary source: [ACL 2026 proceedings](https://aclanthology.org/2026.acl-long.981/).
 
 ## One-line idea
 

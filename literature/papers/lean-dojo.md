@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate and formal-environment anchor.** Primary source: [NeurIPS 2023 proceedings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4441469427094f8873d0fecb0c4e1cee-Abstract-Datasets_and_Benchmarks.html).
+**Selected for the final 20-paper-day list.** Primary source: [NeurIPS 2023 proceedings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4441469427094f8873d0fecb0c4e1cee-Abstract-Datasets_and_Benchmarks.html).
 
 ## Problem and mechanism
 

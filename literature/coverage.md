@@ -4,9 +4,9 @@
 maturity. **Audit confidence** asks a different question: after adversarially
 searching likely omissions and publication changes, how likely is the current
 syllabus judgment to survive another focused check? Counts include cross-listed
-strong candidates and therefore are not additive.
+selected papers and strong candidates and therefore are not additive.
 
-| Topic | Explored level | Strong candidates | Literature maturity | Audit confidence | Judgment | Last audited | Decision-relevant evidence / remaining gap |
+| Topic | Explored level | Selected/strong | Literature maturity | Audit confidence | Judgment | Last audited | Decision-relevant evidence / remaining gap |
 |---|---|---:|---|---|---|---|---|
 | Agent architecture / harness | high | 3 | high | high | standalone/core | 2026-08-27 | SWE-agent and CodeAct isolate opposite interface choices; Murakkab adds a systems-runtime layer; transactional state remains missing |
 | Tools and tool use | high | 3 | high | high | standalone/core | 2026-08-27 | Toolformer learns calls, CodeAct composes them, SWE-agent constrains them; protocol versioning/capability discovery remain thin |

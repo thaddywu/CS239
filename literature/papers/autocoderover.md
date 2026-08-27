@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ISSTA 2024 DOI record](https://doi.org/10.1145/3650212.3680384); [author PDF](https://haifengruan.com/assets/pdf/autocoderover_issta24.pdf).
+**Selected for the final 20-paper-day list.** Primary source: [ISSTA 2024 DOI record](https://doi.org/10.1145/3650212.3680384); [author PDF](https://haifengruan.com/assets/pdf/autocoderover_issta24.pdf).
 
 ## Problem and mechanism
 

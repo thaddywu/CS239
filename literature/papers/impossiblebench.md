@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ICLR 2026 proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ca688eb14e29701a11bdba6633186328-Abstract-Conference.html).
+**Selected for the final 20-paper-day list.** Primary source: [ICLR 2026 proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ca688eb14e29701a11bdba6633186328-Abstract-Conference.html).
 
 ## Problem and mechanism
 

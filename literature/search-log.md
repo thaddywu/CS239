@@ -253,3 +253,43 @@ The search stopped when new results were either mechanism duplicates, weaker
 publication types, domain applications, or papers that would not change a
 candidate comparison or syllabus slot. The audit added ten decision-relevant
 papers rather than rebuilding the landscape.
+
+## 2026-08-27 — Final 20-paper-day selection and metadata verification
+
+### Scope
+
+Re-read the canonical CSV, all topic maps, coverage assessment, syllabus draft,
+and every decision note. The existing pool was sufficient, so this was a
+selection and verification pass rather than a new discovery search; no papers
+were added.
+
+### Selection decisions
+
+- Selected exactly 20 primary papers and recorded the re-ranking in
+  `literature/final-selection-audit.md`.
+- Preserved only mechanism-distinct clusters: constrained versus expressive
+  interfaces; causal topology versus injected-fault containment; analysis-
+  guided versus fixed-pipeline repair; test search versus oracle exploitation;
+  constructive versus failure-oriented memory; information-flow versus
+  event-policy enforcement.
+- Promoted Microreboot despite its age because fine-grained restart and durable-
+  state separation fill a current agent-runtime gap that retry papers do not.
+- Kept Toolformer, LLM-Modulo, RepairAgent, MSG, LEGO-Prover, DSP, intrinsic
+  self-correction, CRITIC, ACE, SAGA, G-Designer, and SemRef as named background
+  or near misses, with explicit redundancy reasons rather than silent omission.
+
+### Publication and affiliation verification
+
+Rechecked all 20 selections against official proceedings, publisher pages,
+ACL Anthology, PMLR, USENIX, or the version-of-record PDF. Author institutions
+in `syllabus/reading-list-draft.md` come from the paper's publication record,
+not inferred current employment. The check also confirmed final peer-reviewed
+status for the 2026 ACL, ICLR, OSDI, SaTML, and ICSE papers used in the draft.
+
+### Final shape
+
+The draft contains 20 paper days, two Document Review days, and one five-minute
+student frontier-scan session. Its center of gravity is repository-scale coding,
+analysis, testing, specification, formal checking, memory reliability, and
+recovery; architecture, applications, and safety form the entry and synthesis
+units.

@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [EMNLP 2025 / ACL Anthology](https://aclanthology.org/2025.emnlp-main.623/).
+**Selected for the final 20-paper-day list.** Primary source: [EMNLP 2025 / ACL Anthology](https://aclanthology.org/2025.emnlp-main.623/).
 
 ## Problem and mechanism
 

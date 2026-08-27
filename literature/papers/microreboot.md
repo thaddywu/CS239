@@ -24,5 +24,5 @@ non-idempotent external actions remain hard.
 
 ## Course placement and decision
 
-**Candidate / short Week 8 systems bridge.** It supplies concrete state/restart
+**Selected for Paper Day 17 as the recovery-systems bridge.** It supplies concrete state/restart
 abstractions almost entirely missing from verbal agent-recovery papers.

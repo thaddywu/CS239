@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ASE 2025 proceedings DOI](https://doi.org/10.1109/ASE63991.2025.00176).
+**Selected for the final 20-paper-day list.** Primary source: [ASE 2025 proceedings DOI](https://doi.org/10.1109/ASE63991.2025.00176).
 
 ## One-line idea
 

@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate and essential counterexample.** Primary source: [FSE 2025 program](https://conf.researchr.org/details/fse-2025/fse-2025-research-papers/85/Demystifying-LLM-based-Software-Engineering-Agents).
+**Selected for the final 20-paper-day list.** Primary source: [FSE 2025 program](https://conf.researchr.org/details/fse-2025/fse-2025-research-papers/85/Demystifying-LLM-based-Software-Engineering-Agents).
 
 ## Problem and mechanism
 

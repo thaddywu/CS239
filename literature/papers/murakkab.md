@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [OSDI 2026 proceedings](https://www.usenix.org/conference/osdi26/presentation/chaudhry).
+**Selected for the final 20-paper-day list.** Primary source: [OSDI 2026 proceedings](https://www.usenix.org/conference/osdi26/presentation/chaudhry).
 
 ## One-line idea
 

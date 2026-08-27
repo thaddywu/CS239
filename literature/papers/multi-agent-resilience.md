@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ICML 2025 / PMLR](https://proceedings.mlr.press/v267/huang25ay.html).
+**Selected for the final 20-paper-day list.** Primary source: [ICML 2025 / PMLR](https://proceedings.mlr.press/v267/huang25ay.html).
 
 ## Problem and mechanism
 

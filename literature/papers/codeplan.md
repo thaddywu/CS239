@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate and preferred repository-scale reading.** Primary source: [FSE 2024 DOI](https://doi.org/10.1145/3643757).
+**Selected for the final 20-paper-day list.** Primary source: [FSE 2024 DOI](https://doi.org/10.1145/3643757).
 
 ## Problem and mechanism
 

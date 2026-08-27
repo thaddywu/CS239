@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate and likely security-week anchor.** Primary source: [IEEE SaTML 2026 author record](https://www.floriantramer.com/publications/camel25/).
+**Selected for the final 20-paper-day list.** Primary source: [IEEE SaTML 2026 author record](https://www.floriantramer.com/publications/camel25/).
 
 ## Problem and mechanism
 

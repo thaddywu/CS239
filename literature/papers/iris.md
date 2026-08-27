@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate and preferred program-analysis anchor.** Primary source: [ICLR 2025 proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/582d4e27fa24168f3af1f4582655034b-Abstract-Conference.html).
+**Selected for the final 20-paper-day list.** Primary source: [ICLR 2025 proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/582d4e27fa24168f3af1f4582655034b-Abstract-Conference.html).
 
 ## Problem and mechanism
 

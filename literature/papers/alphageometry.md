@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate; use if room permits a neuro-symbolic case.** Primary source: [Nature 2024](https://www.nature.com/articles/s41586-023-06747-5).
+**Selected for the final 20-paper-day list.** Primary source: [Nature 2024](https://www.nature.com/articles/s41586-023-06747-5).
 
 ## Problem and mechanism
 
