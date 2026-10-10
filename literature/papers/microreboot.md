@@ -1,8 +1,14 @@
-# Microreboot — A Technique for Cheap Recovery
+# Microreboot—A Technique for Cheap Recovery
 
 ## Metadata
 
 OSDI 2004. [Primary record](https://www.usenix.org/conference/osdi-04/microreboot%E2%80%94-technique-cheap-recovery).
+
+## Decision
+
+**Strong background candidate; not in the v3 primary 20.** Sagas and Beldi more
+directly cover semantic compensation, persistent replay, exactly-once effects,
+and transaction isolation for long-running workflows.
 
 ## One-line idea
 
@@ -24,5 +30,7 @@ non-idempotent external actions remain hard.
 
 ## Course placement and decision
 
-**Selected for Paper Day 17 as the recovery-systems bridge.** It supplies concrete state/restart
-abstractions almost entirely missing from verbal agent-recovery papers.
+**Retained as a strong recovery-systems bridge, not a v3 primary.** It supplies
+concrete state/restart abstractions missing from verbal agent-recovery papers;
+Sagas and Beldi now supply the more direct primary treatment of committed
+effects and transactional replay.

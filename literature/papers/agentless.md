@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [FSE 2025 program](https://conf.researchr.org/details/fse-2025/fse-2025-research-papers/85/Demystifying-LLM-based-Software-Engineering-Agents).
+**Strong candidate and v6 instructor comparison.** Primary source: [FSE 2025 program](https://conf.researchr.org/details/fse-2025/fse-2025-research-papers/85/Demystifying-LLM-based-Software-Engineering-Agents).
 
 ## Problem and mechanism
 
@@ -21,3 +21,7 @@ Agentless tests whether expensive open-ended tool loops are needed for repositor
 ## Course role and comparisons
 
 Pair directly with SWE-agent. Students should identify which benefits arise from interaction, hierarchy, sampling, compact representations, or executable validation—not from the label “agent.”
+
+Reading-list v6 removes it from the multi-agent week because it is a repair and
+autonomy control, not a multi-agent architecture. Its negative result remains
+an instructor comparison in the repair week.

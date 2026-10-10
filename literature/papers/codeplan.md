@@ -23,3 +23,9 @@ Only a small number of repositories and two task families are used, including pr
 ## Course role
 
 CodePlan is planning grounded in software semantics, unlike generic tree search. Pair with classical reflexion models to distinguish forward change-impact reasoning from recovering and checking an architecture hypothesis.
+
+## Reading-list v5 decision
+
+**Strong candidate, no longer primary.** The change-obligation DAG remains an
+excellent software-evolution abstraction, but v5 removes the broad understanding
+block and allocates those slots to relational and symbolic semantic analyses.

@@ -52,7 +52,10 @@ explain *why* an instruction-only defense cannot be a reference monitor.
 
 ## Reading decisions
 
-**Strong:** AgentDojo, CaMeL, AgentSpec, ACE, SAGA.
+**Strong primaries:** AgentDojo, CaMeL, AgentSpec, ACE.
+
+**Strong background:** SAGA for authenticated inter-agent contact and provider
+lifecycle assumptions, not general task delegation.
 
 **Other candidates:** ToolEmu, InjecAgent, RefineAct, Saltzer–Schroeder excerpt.
 
@@ -123,3 +126,94 @@ monocultural: benchmark, model-level defense, runtime monitor, dataflow/
 capability architecture, trusted-plan architecture, and cryptographic
 authorization are separable philosophies. Sandboxing/OS confinement and common
 cross-paper evaluation remain underdeveloped.
+
+## Final-selection v3 update — 2026-08-27
+
+The final set uses CaMeL, SAGA, and AgentSpec because their trusted computing
+bases are genuinely different: provenance/capability-separated control,
+cryptographic identity and inter-agent authorization, and application-specific
+runtime policy enforcement. ACE remains a very strong alternate to CaMeL but
+would duplicate the plan/dataflow enforcement philosophy more than SAGA's
+delegation mechanism. Security is embedded in a broader correctness block with
+Sagas, Beldi, and adjustable autonomy so prompt injection is not treated as the
+whole correctness problem.
+
+## Reading-list v4 update — 2026-08-27
+
+CaMeL, AgentSpec, and SAGA remain primary because they enforce different
+relations: provenance/capability flow, application action policies, and
+inter-agent identity/delegation. SAGA re-earns its slot despite its trusted
+provider and limited task evaluation because the other two do not cover
+inter-agent authority. [Temporary Authority, Permanent Effects](../literature/papers/temporary-authority-permanent-effects.md)
+is the most direct new freshness/TOCTOU candidate but remains a preprint.
+*Governance by Construction* is rejected as a short demo that overlaps
+AgentSpec's stronger reference-monitor lesson.
+
+## Reading-list v5 update — 2026-08-27
+
+CaMeL, AgentSpec, and SAGA remain the authority/enforcement core. The expanded
+Agentic SE search adds [RFCAudit](../literature/papers/rfcaudit.md) as a selected
+protocol-conformance auditor and records [ACTaint](../literature/papers/actaint.md),
+[ProbGuard](../literature/papers/probguard.md), and [Semia](../literature/papers/semia.md)
+as serious challengers. ProbGuard's predicate/DTMC/CTL design is technically
+deep, but its small empirical sample does not meet the practical PAC conditions;
+Semia's Datalog skill audit remains preprint-only. These do not alter the three
+distinct trusted computing bases in the primary security block.
+
+## Final adversarial review — 2026-08-28
+
+The primary security pair is now CaMeL and AgentSpec: provenance/capability-aware
+information flow versus a stateful external reference monitor. SAGA moves to
+background after protocol-level inspection. It establishes token secrecy and
+authentication for provider-mediated contact, but not policy correctness,
+delegation-chain semantics, attenuation, or immediate revocation of outstanding
+tokens. This sharper classification reopens delegated authority as a genuine
+coverage gap rather than claiming it is solved.
+
+ProbGuard remains a strong candidate but does not replace the pair: its
+predicate/DTMC/CTL boundary is interesting, while the practical evaluation uses
+far fewer traces than its useful PAC bounds and its safest intervention sharply
+reduces completion.
+
+## Supplied-list enforcement audit — 2026-08-28
+
+The supplied list exposes a fast-moving preprint frontier around the selected
+CaMeL/AgentSpec pair:
+
+- [Agent-C](../literature/papers/agent-c.md) adds formally defined temporal
+  constraints, incremental SMT checks, and compliant constrained generation.
+- [Language-Based Agent Control](../literature/papers/lbac.md) types the entire
+  application and recursive subagents, supporting provenance, attenuated
+  capabilities, and information flow in one host language.
+- [VIGIL](../literature/papers/vigil.md) lifts skill prose and traces into
+  finite-trace SMT policies, but still trusts trace visibility and LLM policy
+  compilation.
+- [ToolGuard](../literature/papers/toolguard.md) is peer reviewed and compiles
+  company policy prose to pre-tool guard code, but its one-domain preliminary
+  evidence and inability to catch omitted required actions make it background.
+
+No current primary is displaced solely by a preprint. Agent-C and LBAC require
+publication rechecks because they are genuine mechanism challengers rather than
+minor variants.
+
+## Reading-list v7 placement — 2026-08-29
+
+[ACE](../literature/papers/ace.md) becomes the scheduled secure-architecture
+primary after full-paper review. Its trusted abstract plan, app-specific
+concrete plan, static lattice information-flow check, and isolated
+capability-mediated execution form one end-to-end architecture. The important
+limits are equally explicit: ahead-of-time restricted plans constrain dynamic
+replanning and mutable behavior, while schemas, plan matching, isolation, and
+the enforcement runtime join the trusted base.
+
+[AgentSpec](../literature/papers/agentspec.md) remains selected for a different
+abstraction: stateful policies over observable action traces. [TraceFix](../literature/papers/tracefix.md)
+joins the broader correctness block because it checks and repairs coordination
+protocols, then reveals a gap between the verified state machine and runtime
+topology enforcement.
+
+[CaMeL](../literature/papers/camel.md) moves to strongest alternate, not because
+it lacks depth. Its privileged/quarantined-model split and provenance-aware
+capabilities remain an excellent alternative; v7 prefers ACE's complete
+plan-to-check-to-execution path and stronger systems-security venue. Agent-C,
+LBAC, and Atomix remain technically important preprints rather than primaries.

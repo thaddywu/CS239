@@ -111,3 +111,30 @@ New repair/localization systems add variants but do not overturn the control
 spectrum or isolate autonomy more cleanly. The topic remains highly suitable as
 a cross-course thread; allocating a separate “coding agents” survey week would
 still duplicate stronger mechanism-specific sessions.
+
+## Final-selection v3 update — 2026-08-27
+
+The final repository sequence is AutoCodeRover → Agentless → CodePlan → IRIS →
+Software Reflexion Models. It intentionally moves from analysis-guided autonomy
+to a fixed control pipeline, then to explicit evolving plans, whole-program
+semantic/static analysis, and architecture hypothesis checking. This preserves
+five distinct mechanisms without adding another retrieve–patch–test variant.
+
+## Reading-list v4 update — 2026-08-27
+
+The primary repository sequence is now CodePlan and IRIS for understanding,
+followed by AutoCodeRover and Agentless for repair. Software Reflexion Models is
+background, while [RepoProbe](../literature/papers/repoprobe.md) is the optional
+negative reading: it measures evidence-grounded architectural answers and edit
+bias without claiming to recover a maintained architecture model.
+
+## Reading-list v5 update — 2026-08-27
+
+The primary Agentic SE spine is now [Agentless](../literature/papers/agentless.md)
+as the autonomy control, [AutoCodeSherpa](../literature/papers/autocodesherpa.md)
+for executable issue explanations, [NESA](../literature/papers/nesa.md),
+[Gordian](../literature/papers/gordian.md), and [IRIS](../literature/papers/iris.md)
+for analysis, and [RFCAudit](../literature/papers/rfcaudit.md) for normative
+conformance. AutoCodeRover and CodePlan remain strong alternatives, but a
+generic repository-understanding block is removed. The organizing question is
+which artifact or relation constrains the model, not how autonomous the demo is.

@@ -1,0 +1,24 @@
+syllabus  expectation 
+1. BYOT : bring your own token (cloud credit, API tokens) they have buy for their own and apply for their funding 
+2. I would this to be discussion oriented graduate seminar, 2 weeks to be by you, me and Ben we lead to reading group, and the rest is their discussion. 
+3. No slides AI generated. 
+4. mostly in the PDF annotation with a list of QA and being able to sketch a concrete working example on the board 
+5. evaluation will be in the form of presentations, somewhat in the flavor of an oral exam where I or you or other students ask questions and they explain. 
+
+Final project is a research proposal writing in the 3 pages long. an idea, example, and why, literature (ideation), benchmarks, less emphasis on implementation. 
+Live is what we need (live demo) 
+ 
+class format: one paper a day. 1:15 minutes (50 minute presentation by a lead presenter or two) and QA. In the end, we have a research proposal presentation and a live demo. 
+
+-- reading list 
+- 1. tutorial / papers on agent frameworks (A2A, MCP, Strands) (1 week on the introduction tutorial) 
+2. agent architectural styles grounded on relevant papers.  multi-agent architectural styles (2-3 papers)
+3. coding, validation, verification using agents. (5 weeks, combining papers ICSE / FSE / PLDI / OOPSLA / CAV / NIPS / ACL) 
+coding recommendation (1 week
+autoformalization verification proof, synthesis (1 week)  
+test generation
+architecture recovery, reverse engineering, debugging, testing, verification, 
+various applications of agents (1 week, agents for science, agents for AI chip design), we could have have one slide presentation by everyone (5 minute -- here's a cool agentic thing I saw)    
+4. correctness, and safety of agent-leveraged applications. (Security + SE + HCI )  -- what are the new challenges with agent-based development from software correctness perspective that is different from traditional SW development, SW with rest APIS/ cloud APIs with middlewares
+
+week 10: 5 google doc review sessions where peers will comment and ask questions, criticize pros and cons.

@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [ICML 2024 / PMLR](https://proceedings.mlr.press/v235/wang24h.html).
+**Strong candidate and v6 instructor comparison.** Primary source: [ICML 2024 / PMLR](https://proceedings.mlr.press/v235/wang24h.html).
 
 ## Problem and mechanism
 
@@ -20,3 +20,7 @@ The paper also builds CodeActInstruct, roughly 7,000 multi-turn trajectories, an
 ## Course role and comparisons
 
 Pair with SWE-agent. CodeAct argues for a general, compositional action language; SWE-agent argues for small, LM-specific commands and guardrails. The tension is productive: expressiveness reduces orchestration friction but increases validation and confinement obligations.
+
+Reading-list v6 gives the primary slot to AgentSquare because it supplies the
+missing planning/reasoning/tool/memory ingredient map. CodeAct remains the best
+action-language counterpoint and is assigned as instructor comparison.

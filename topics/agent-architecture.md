@@ -7,6 +7,33 @@ among a generative model, action interface, state/context manager, execution
 runtime, tools, planner, validator, and policy monitor. The best literature in
 this cluster makes one of those boundaries an experimental variable.
 
+## Overview and survey layer
+
+No survey should replace a mechanism-bearing primary, but a short framing
+reading now fills the missing map above AgentSquare:
+
+- [From Language Models to Agentic AI](../literature/papers/from-language-models-to-agentic-ai.md)
+  is the closest current one-paper engineering overview. It separates
+  perception, memory, reasoning/planning, tool interface, actuation, and
+  feedback/oversight, then adds autonomy, tool-use, collaboration, and
+  safety/governance axes. Its August 2026 publication and synthesis-level
+  evidence make it instructor framing rather than a student-led primary.
+- [Wang et al.'s autonomous-agent survey](../literature/papers/survey-llm-autonomous-agents.md)
+  remains the cleanest established single-agent module vocabulary: profile,
+  memory, planning, and action.
+- [Guo et al.'s multi-agent survey](../literature/papers/llm-multiagents-survey.md)
+  is the compact companion for environment interfaces, profiling,
+  communication structure/content, and capability acquisition.
+- [Xi et al.](../literature/papers/rise-potential-llm-agents-survey.md) is the
+  encyclopedic brain-perception-action reference; [Khapre et al.](../literature/papers/agentic-ai-systems-survey.md)
+  is the broad topology/cognition/trust reference. Neither is concise enough
+  for a primary discussion.
+
+The resulting teaching stack is **survey map -> AgentSquare's composable
+ingredient/search abstraction -> SWE-agent's environment boundary**. Multi-agent
+organization and communication remain technical follow-ons rather than a third
+overview week.
+
 ## Mechanism map
 
 ### Action representation
@@ -90,6 +117,9 @@ do not isolate a reusable architectural mechanism.
 - Matched experiments separating a better base model from a better harness.
 - Citation-chain follow-up from SWE-agent's ACI ablations and from verified
   memory systems, especially negative interface results.
+- Recheck whether the August 2026 engineering survey gains field uptake or a
+  stronger revised version before the syllabus freezes; its current value is
+  vocabulary coverage, not validated architectural evidence.
 
 ## Due diligence audit — 2026-08-27
 
@@ -138,3 +168,86 @@ memory in LEGO-Prover. That is enough for a focused classroom session, although
 transactions, provenance, and cross-session security remain open. No stronger
 peer-reviewed alternative found in this audit for the current interface and
 planning primaries.
+
+## Final-selection v3 update — 2026-08-27
+
+The final primary set keeps SWE-agent, CodeAct, and Murakkab as three distinct
+layers: guarded ACI, executable action language, and workflow/runtime optimizer.
+Memory remains technically mature, but neither ACL 2026 memory paper receives a
+standalone day. AgeMem and the experience-following study move to tutorial and
+cross-cutting state-correctness background because transaction, recovery,
+authority, and oversight had larger uncovered gaps. Persistent state is now
+revisited through CodePlan's explicit plan state, Beldi's logged transactional
+state, AgentSpec's monitor state, and the final correctness scenario.
+
+## Reading-list v4 update — 2026-08-27
+
+The compact architecture week now assigns only SWE-agent and CodeAct. Murakkab
+remains technically strong systems background, but resource/SLO optimization
+across models and hardware does not answer the revised questions about the
+agent-computer interface, control placement, shared state, or coordination.
+Frameworks and protocols remain tutorial material unless their papers isolate a
+comparable abstraction.
+
+## Reading-list v5 update — 2026-08-27
+
+[Agentix](../literature/papers/agentix.md) joins SWE-agent and CodeAct. It adds
+the missing program-runtime layer: PLAS schedules by cumulative attained service
+and ATLAS follows distributed critical paths. [LLM-as-Scheduler](../literature/papers/llm-as-scheduler.md)
+is assigned in the coordination unit because it routes semantic workflow stages
+rather than serving program calls. The current architecture sequence is thus
+interface constraint → executable action language → whole-program runtime.
+
+## Final adversarial review — 2026-08-28
+
+The architecture sequence remains SWE-agent → CodeAct → Agentix. The first pair
+still creates a real constrained-interface versus executable-action-language
+tension; Agentix adds non-clairvoyant program and critical-path scheduling.
+
+LAS is cut: its domain-trained gate and prompted JSON router do not model
+resources, dependencies, concurrency, tools, or durable workflow state. The
+Murakkab comparison does not displace Agentix: Murakkab is the broader
+profile-guided model/hardware/SLO optimizer, while Agentix is the cleaner
+runtime abstraction for arbitrary dynamic agent programs.
+
+## Ingredient-level architecture audit — 2026-08-28
+
+[AgentSquare](../literature/papers/agentsquare.md) materially changes the answer
+to the narrower question “which paper teaches the ingredients of an agent?” It
+standardizes planning, reasoning, tool use, and memory behind uniform interfaces
+and searches their combinations. This is a more direct component map than the
+current SWE-agent → CodeAct → Agentix sequence, which instead teaches interface
+constraint, action representation, and runtime scheduling.
+
+The result does not invalidate those three papers. AgentSquare fixes the
+workflow and omits interface semantics, validators, policy monitors, and
+durable-state correctness; its ablations chiefly justify the search algorithm,
+not the independent necessity of each component. The strongest course design is
+therefore a map-plus-deep-dives structure: AgentSquare for the module vocabulary,
+SWE-agent for the environment boundary, and Agentix for execution/runtime. If
+the primary count must remain fixed, CodeAct is the most overlapping member of
+the existing architecture trio and hence the direct comparison point—not an
+automatic rejection before the full 19-paper tradeoff is reopened.
+
+[GPTSwarm](../literature/papers/gptswarm.md) and
+[MaAS](../literature/papers/maas.md) remain architecture-search comparisons.
+GPTSwarm supplies recursive computational graphs; MaAS supplies query-adaptive
+operator DAGs and cost allocation. Neither gives as clear a single-agent module
+taxonomy as AgentSquare.
+
+## Reading-list v6 resolution — 2026-08-28
+
+The architecture unit is capped at one week. AgentSquare, SWE-agent, and Agentix
+are selected as module map → environment boundary → program runtime. CodeAct
+moves to instructor comparison: still the strongest expressive-action-language
+paper, but more overlapping with SWE-agent than AgentSquare's ingredient map.
+
+## Reading-list v7 placement — 2026-08-29
+
+The 16-meeting teaching list reduces the architecture week to AgentSquare and
+SWE-agent: module vocabulary followed by the environment/interface boundary.
+[Agentix](../literature/papers/agentix.md) remains a very-high-depth systems
+alternate rather than a rejection. Its PLAS/ATLAS program scheduling would be
+the first addition if serving performance receives a dedicated meeting;
+[CodeAct](../literature/papers/codeact.md) remains the expressive action-language
+comparison.

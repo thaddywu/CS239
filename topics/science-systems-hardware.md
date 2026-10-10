@@ -110,3 +110,11 @@ One excellent OSDI runtime paper overturns the “mechanism-thin systems” part
 the combined judgment. Science and hardware still supply cases rather than a
 diverse technical cluster, so the combined category does not merit replacing a
 core week; Murakkab should instead appear in architecture/runtime.
+
+## Final-selection v3 update — 2026-08-27
+
+Murakkab remains the only primary paper from this combined map and is taught as
+a runtime/optimization mechanism. AlphaGeometry moves out of the primary 20,
+and science, hardware, chip design, and physical-agent systems are reserved for
+the separate student frontier scan unless a future paper contributes a central
+software abstraction not taught elsewhere.

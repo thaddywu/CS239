@@ -122,3 +122,53 @@ The week now spans interactive proof environments, natural-language model
 synthesis, counterexample repair, and property generation rather than two
 theorem-proving systems. Formal validation still cannot prove that an inferred
 statement captures user intent, which supplies the central classroom dispute.
+
+## Final-selection v3 update — 2026-08-27
+
+The final formal sequence is MSG → LeanDojo → Draft, Sketch, and Prove. These
+teach three different contracts between uncertain and exact components:
+generated software specifications checked by Move Prover; exact interactive
+proof state plus retrieval/search; and informal global structure compiled into
+formal holes discharged by a prover. PAT-Agent remains a strong optional
+model-checking reading, but DSP has the cleaner decomposition and higher evidence
+quality for the single available proof/synthesis slot. AlphaGeometry moves to
+student frontier material because its mechanism is excellent but application-
+specific and no longer beats a central software or correctness mechanism.
+
+## Reading-list v5 update — 2026-08-27
+
+The v5 core is [ARTEMIS](../literature/papers/artemis.md) followed by
+[LeanDojo](../literature/papers/lean-dojo.md). ARTEMIS uses structured language
+and balanced distinguishing traces to validate intended requirements; LeanDojo
+assumes a formal statement and exposes exact proof state and kernel checking.
+[HoarePrompt](../literature/papers/hoareprompt.md) is assigned in program
+analysis precisely because its program-logic structure is not a proof.
+
+MSG and Draft--Sketch--Prove move to strong alternatives rather than being
+downgraded technically. [LemmaNet](../literature/papers/lemmanet.md) is the most
+important accepted-in-press recheck; [Event-B Agent](../literature/papers/event-b-agent.md)
+remains a candidate pending stronger comparative evidence.
+
+## Final adversarial review — 2026-08-28
+
+[LemmaNet](../literature/papers/lemmanet.md) replaces HoarePrompt. Full-paper
+inspection found an offline semantics-aware VC, obligation-aligned proved helper
+lemmas, an adaptive lemma store, and proof-state-guided online revision. The
+original Frama-C VC and every imported/refined lemma are checked in Rocq, so an
+incorrect model interpretation harms search completeness rather than proof
+validity. Component ablations on 941 VCs support the mechanism.
+
+LeanDojo remains primary for a different reason: it defines the exact
+environment, retrieval boundary, and kernel-feedback interaction. Draft–Sketch–
+Prove, Agentic Specification Generator, and PAT-Agent remain strong alternatives
+but do not displace this environment-versus-adaptive-artifact pair.
+
+## Reading-list v7 placement — 2026-08-29
+
+The schedule has one proof meeting, so [LemmaNet](../literature/papers/lemmanet.md)
+is the primary: it connects source semantics and Frama-C verification
+conditions to adaptive helper lemmas that Rocq checks exactly.
+[LeanDojo](../literature/papers/lean-dojo.md) remains the strongest alternate and
+is not downgraded technically; it would replace LemmaNet if the instructor
+prefers the foundational proof-environment, retrieval, and action-interface
+lesson over agentic program verification.

@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [NDSS 2025 proceedings](https://www.ndss-symposium.org/ndss-paper/propertygpt-llm-driven-formal-verification-of-smart-contracts-through-retrieval-augmented-property-generation/).
+**Strong candidate; MSG receives the v3 specification slot.** Primary source: [NDSS 2025 proceedings](https://www.ndss-symposium.org/ndss-paper/propertygpt-llm-driven-formal-verification-of-smart-contracts-through-retrieval-augmented-property-generation/).
 
 ## One-line idea
 

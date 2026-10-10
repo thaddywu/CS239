@@ -1,8 +1,8 @@
-# Draft, Sketch, and Prove
+# Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs
 
 ## Decision
 
-**Strong candidate.** Primary source: [ICLR 2023 OpenReview](https://openreview.net/forum?id=SMa9EAovKMC).
+**Selected for the final 20.** Primary source: [ICLR 2023 OpenReview](https://openreview.net/forum?id=SMa9EAovKMC).
 
 ## Problem and mechanism
 
@@ -23,3 +23,9 @@ Success still assumes a correct formal theorem statement. A persuasive informal 
 ## Course role
 
 Read beside LeanDojo or LEGO-Prover. DSP is the clearest example of an intermediate artifact acting as an interface contract between a generative model and a verifier. Compare with CodePlan's edit-obligation graph.
+
+## Reading-list v5 decision
+
+**Strong candidate, no longer primary.** Technical depth is unchanged. LeanDojo
+retains the exact proving slot, while HoarePrompt creates a more software-specific
+contrast between program-logic structure and genuine verification.

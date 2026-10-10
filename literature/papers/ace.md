@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [NDSS 2026 proceedings](https://www.ndss-symposium.org/ndss-paper/ace-a-security-architecture-for-llm-integrated-app-systems/).
+**Selected for v7.** Primary source: [NDSS 2026 proceedings](https://www.ndss-symposium.org/ndss-paper/ace-a-security-architecture-for-llm-integrated-app-systems/).
 
 ## One-line idea
 
@@ -19,15 +19,18 @@ capabilities between apps. This combines plan integrity and complete mediation.
 
 ## Evidence and limits
 
-- ACE reports 100% security on all 1,054 InjecAgent cases and near-complete
-  security on Agent Security Bench under its stated threat model.
-- Utility remains at least 84% on InjecAgent with stronger planners, while model
-  choice and planning failures create a real security/utility tradeoff.
-- The guarantee trusts user intent, abstract-plan construction boundaries, app
-  schemas, and the enforcement runtime; allowed-but-harmful actions remain.
+- The evaluation spans InjecAgent, Agent Security Bench, and tool-use utility;
+  it measures both injection containment and the cost of plan restrictions.
+- Abstract plans are made ahead of time. This constrains dynamic replanning,
+  mutable state, dynamic code, and other behaviors outside ACE's restricted
+  execution language.
+- The guarantee trusts user intent, planner boundaries, app schemas, abstract
+  to concrete plan matching, isolation, and the enforcement runtime.
+  Allowed-but-harmful actions and planning failures remain possible.
 
 ## Course role
 
-Primary alternate to CaMeL. ACE makes trusted plan structure explicit and is
-well suited to compare dataflow/capability enforcement with AgentSpec's general
-event-policy monitor.
+Primary secure-architecture reading in v7. ACE makes the whole enforcement path
+auditable: trusted abstract plan, app binding, static information-flow check,
+then isolated capability-mediated execution. Compare it with AgentSpec's
+general event-policy monitor and keep CaMeL as the closest alternate.

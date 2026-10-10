@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [NeurIPS 2023 proceedings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4441469427094f8873d0fecb0c4e1cee-Abstract-Datasets_and_Benchmarks.html).
+**Strong alternate after the v7 audit.** Primary source: [NeurIPS 2023 proceedings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/4441469427094f8873d0fecb0c4e1cee-Abstract-Datasets_and_Benchmarks.html).
 
 ## Problem and mechanism
 
@@ -22,4 +22,8 @@ Tactic imitation inherits scarcity and style bias from human proofs. Success dep
 
 ## Course role
 
-Use to show what an unusually strong agent runtime looks like: typed state, executable actions, precise failure feedback, scoped resources, and an unforgeable validator. Compare its interface design with SWE-agent and its retrieval with RepoCoder.
+Use to show what an unusually strong agent runtime looks like: typed state,
+executable actions, precise failure feedback, scoped resources, and an
+unforgeable validator. V7 schedules the newer LemmaNet program-verification
+mechanism in its single proof meeting; LeanDojo remains the first replacement
+if the instructor wants the foundational environment/runtime perspective.

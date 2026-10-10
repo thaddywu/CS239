@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Strong candidate.** Primary source: [ASE 2025 proceedings DOI](https://doi.org/10.1109/ASE63991.2025.00110).
+**Selected for the final 20.** Primary source: [ASE 2025 proceedings DOI](https://doi.org/10.1109/ASE63991.2025.00110).
 
 ## One-line idea
 
@@ -30,3 +30,10 @@ without expanding everything, making program analysis part of generation.
 Strong optional bridge among testing, program analysis, and formal methods. It
 shows that “multi-agent” is useful when roles correspond to distinct formal
 languages and validators, not software-company personas.
+
+## Reading-list v5 decision
+
+**Strong candidate, no longer primary.** Clause-specific generation, selective
+inlining, and Move Prover feedback remain deep. ARTEMIS is preferred because it
+generalizes to requirements formalization and makes human semantic validation an
+explicit distinguishing-trace algorithm.

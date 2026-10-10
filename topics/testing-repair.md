@@ -129,3 +129,54 @@ LLMs now generate reusable, prover-checked properties and invariants, so “only
 example tests” is no longer accurate. The strict PBT claim still stands because
 the literature does not yet offer a mature agent loop that jointly maintains
 properties, generators, shrinking, and regression semantics across repositories.
+
+## Final-selection v3 update — 2026-08-27
+
+[RippleGUItester](../literature/papers/rippleguitester.md) was fully inspected as
+the strongest new 2026 testing challenger. Its change-intent mining, historical
+scenario retrieval, pre/post replay, pixel differencing, and multimodal oracle
+are substantial, but 46.4% reported precision and 13/46 recall on the Firefox
+ground-truth subset make its oracle less clean for the course's central hybrid
+lesson. CodaMOSA therefore re-earns the primary slot: the stagnation trigger and
+return to evolutionary search isolate when model generation should intervene.
+
+MSG is promoted over PropertyGPT for the specification slot because clause-
+specialized generation, selective function inlining, and all-in-one/prover-
+feedback ablations expose the mechanism more sharply. PropertyGPT remains a
+strong alternative. AutoCodeRover, Agentless, ImpossibleBench, CodaMOSA, and MSG
+are the final readings crossing repair, testing, and specification.
+
+## Reading-list v4 update — 2026-08-27
+
+The previous testing comparison is upheld. CodaMOSA, ImpossibleBench, and MSG
+form one progression: tests as search feedback, tests as gameable/incomplete
+specifications, and generated formal clauses as durable checked artifacts.
+Property-based testing stays embedded here rather than becoming a separate
+week. AutoCodeRover and Agentless remain the mechanism-distinct repair pair.
+
+## Reading-list v5 update — 2026-08-27
+
+[Agentless](../literature/papers/agentless.md), [AutoCodeSherpa](../literature/papers/autocodesherpa.md),
+and [ImpossibleBench](../literature/papers/impossiblebench.md) are the final
+sequence: a fixed repair control, executable issue properties that localize and
+reject patches, and an adversarial demonstration that tests can reward the wrong
+behavior. AutoCodeSherpa's input/infection/output decomposition and refinement
+ablations displace CodaMOSA's older hybrid-search slot, while AutoCodeRover and
+CodaMOSA remain strong alternatives. The gap shifts from property generation to
+property completeness, maintenance, shrinking, and independence from the same
+issue interpretation used to generate a patch.
+
+## Reading-list v7 audit — 2026-08-29
+
+AutoCodeSherpa remains the mechanism-first repair primary. ImpossibleBench is
+the sole evaluation-first exception in v7 because its contradictory
+specification/test construction makes every pass an unambiguous correctness
+failure and supports direct analysis of test access, feedback loops, and
+monitoring.
+
+[PSearch](../literature/papers/psearch.md) is a watch-list candidate: a
+structured intermediate-patch state and Monte Carlo tree search could provide a
+strong long-horizon repair algorithm, but the full paper was unavailable and
+the method/ablation audit could not be completed. [CANDOR](../literature/papers/candor.md)
+is rejected for the list: prompted specialist roles and panel consensus do not
+provide an independent test oracle or a deeper coordination abstraction.

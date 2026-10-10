@@ -18,3 +18,10 @@ Search-based test generation explores executions effectively but stalls on code 
 ## Course role and comparisons
 
 Use to introduce “LLM-Modulo” engineering in testing. Compare with CoverUp's iterative coverage dialogue and QuickCheck's durable, human-stated properties. A central seminar question is why current coding agents optimize test passage rather than discover reusable properties and generators.
+
+## Reading-list v5 decision
+
+**Strong candidate, no longer primary.** The stagnation-triggered hybrid remains
+one of the cleanest search/LLM handoffs. AutoCodeSherpa wins the scarce v5 slot
+because its issue-specific conditions are executable validation artifacts, not
+only new test seeds.

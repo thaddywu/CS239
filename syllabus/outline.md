@@ -1,193 +1,94 @@
-# Tentative Seminar Outline
+# CS239 Seminar Outline — Fall 2026 V7 Placement Draft
 
-This is an evidence-driven first syllabus, not a locked schedule. The normal
-load is two primary papers plus a short background or optional reading. Papers
-remain `strong_candidate` in the canonical CSV until the instructor freezes the
-schedule.
+The current date-level schedule is [cs239-fall2026.md](cs239-fall2026.md): 16
+paper-discussion meetings over Weeks 1--8. Full titles, discussion rationales,
+and replacement candidates are in
+[paper-list-fall2026.md](paper-list-fall2026.md). The audited
+[reading-list-v7.md](reading-list-v7.md) records the 16-paper selection and the
+paper-by-paper technical-depth review; v6 remains a historical research pool.
 
-## Course through-line
+## Week 1 — Agent components and the computer interface
 
-Every week asks the same responsibility question:
+- AgentSquare
+- SWE-agent
 
-> What should a probabilistic model decide, what state and authority should the
-> runtime expose, and what independent evidence is allowed to validate or stop
-> an action?
+**Tension:** planning, reasoning, tools, and memory provide a component map, but
+an operational software agent also needs an environment interface, feedback
+semantics, validation, and confinement.
 
-Agent-based software development runs through the course rather than occupying
-one framework-survey week.
+## Week 2 — Multi-agent organization and communication
 
-## Week 1 — Agents as runtime/interface systems
+- Multi-Agent Collaboration via Evolving Orchestration
+- Understanding the Information Propagation Effects of Communication Topologies
 
-**Primary**
+**Short framing:** *Large Language Models Miss the Multi-agent Mark*.
 
-- [SWE-agent](../literature/papers/swe-agent.md)
-- [CodeAct](../literature/papers/codeact.md)
+**Tension:** dynamic orchestration chooses who acts and induces a collaboration
+graph; causal intervention measures which insights and errors actually travel
+through a graph. Neither supplies general concurrent shared-state, authority,
+or external-effect semantics.
 
-**Short background:** ReAct. **Optional:** OpenHands;
-[Murakkab](../literature/papers/murakkab.md) for the deployment/runtime layer.
+## Week 3 — Coding agents and agentic program analysis
 
-**Debate:** Should an agent receive a narrow LM-specific interface with concise
-feedback and guardrails, or a maximally compositional programming language? Map
-the trusted computing base and failure-recovery behavior of both designs.
+- AutoCodeSherpa
+- NESA
 
-## Week 2 — Learning tools, planning, and programmable orchestration
+**Tension:** generated executable properties may guide issue repair, while
+generated semantic relations may extend static analysis. Identify the
+independent checker and incompleteness boundary in each.
 
-**Primary**
+## Week 4 — Oracle quality and solver representations
 
-- [Toolformer](../literature/papers/toolformer.md)
-- [LLM-Modulo planning](../literature/papers/llm-modulo-planning.md)
+- ImpossibleBench
+- Defusing Logic Bombs with LLM-Generated Ghost Code
 
-**Optional:** DSPy; LATS; MemGPT.
+**Tension:** tests can reward an incorrect implementation; model-generated
+solver aids can be useful without being trusted if witnesses are rechecked on
+the original program.
 
-**Debate:** Which decisions belong in learned weights, a compiler/runtime, a
-search procedure, or an external planner/verifier? Students redraw each paper as
-the same proposer–executor–validator architecture and identify missing state.
+## Week 5 — Dataflow analysis and implementation conformance
 
-## Week 3 — Repository repair: agent or engineered pipeline?
+- IRIS
+- RFCAudit
 
-**Primary**
+**Tension:** IRIS grounds model-proposed security semantics in CodeQL
+reachability, whereas RFCAudit retrieves clause-level evidence but leaves more
+of the final conformance judgment to a model.
 
-- [AutoCodeRover](../literature/papers/autocoderover.md)
-- [Agentless](../literature/papers/agentless.md)
+## Week 6 — Intended semantics and exact verification
 
-**Optional:** [RepairAgent](../literature/papers/repairagent.md); SWE-bench for
-evaluation history.
+- ARTEMIS
+- LemmaNet
 
-**Debate:** Hold the model constant conceptually. Which gains come from program
-structure, fault localization, hierarchy, sampling, interaction, or test access?
-Why is “agentless” not the same as “non-agentic computation”?
+**Tension:** ARTEMIS asks a human to distinguish candidate formal meanings;
+LemmaNet accepts model-proposed helper lemmas only after exact proof checking.
+Compare the human and mechanical validation boundaries.
 
-## Week 4 — Testing, properties, and specification gaming
+## Week 7 — Secure architecture and runtime enforcement
 
-**Primary**
+- ACE
+- AgentSpec
 
-- [CodaMOSA](../literature/papers/codamosa.md)
-- [ImpossibleBench](../literature/papers/impossiblebench.md)
+**Tension:** ACE fixes trusted plan structure, statically checks information
+flow, and isolates app execution; AgentSpec constrains observable action traces
+through a stateful reference monitor. Audit the trusted computing base,
+complete mediation, and policy completeness in both.
 
-**Short background:** QuickCheck. **Optional:** CoverUp;
-[PropertyGPT](../literature/papers/propertygpt.md);
-[Agentic Specification Generator](../literature/papers/agentic-specification-generator.md).
+## Week 8 — Coordination correctness and evolving intent
 
-**Debate:** Coverage and test passage are feedback signals, not semantic truth.
-When should a system synthesize examples, properties, or metamorphic relations;
-and what should it do when tests conflict with the stated requirement?
+- TraceFix
+- Semantic Commit
 
-## Week 5 — Neuro-symbolic software engineering at repository scale
+**Tension:** a generated protocol can pass bounded model checking yet diverge at
+runtime, while persistent intent can accumulate semantic conflicts that require
+mixed-initiative review. Ask how checked models, evolving intent, authority, and
+current world state should be bound to a concrete effect.
 
-**Primary**
+## Cross-course correctness trace
 
-- [IRIS](../literature/papers/iris.md)
-- [CodePlan](../literature/papers/codeplan.md)
-
-**Short background:** [Software Reflexion Models](../literature/papers/software-reflexion-models.md).
-**Optional:** [GPTScan](../literature/papers/gptscan.md); RepoGraph;
-[SemRef](../literature/papers/semref.md), with its proceedings-record caveat.
-
-**Debate:** IRIS lets the model supply missing specifications while analysis
-supplies reachability; CodePlan lets analysis create future edit obligations.
-Contrast both with retrieval-only “repository understanding” and define what
-would count as actual architecture recovery.
-
-## Week 6 — Proof assistants as high-integrity agent environments
-
-**Primary**
-
-- [LeanDojo](../literature/papers/lean-dojo.md)
-- [PAT-Agent](../literature/papers/pat-agent.md)
-
-**Optional:** [Draft, Sketch, and Prove](../literature/papers/draft-sketch-prove.md);
-[LEGO-Prover](../literature/papers/lego-prover.md);
-[AlphaGeometry](../literature/papers/alphageometry.md); *Don't Trust: Verify*;
-PropertyGPT or Agentic Specification Generator for software contracts.
-
-**Debate:** Why do typed state, small executable actions, scoped libraries, and
-independent checking make formal tools better agent runtimes than a shell? A
-checker proves a generated model internally consistent; what evidence shows the
-model faithfully represents the informal system?
-
-## Week 7 — Multi-agent communication and fault containment
-
-**Primary**
-
-- [Information Propagation Effects of Communication Topologies](../literature/papers/information-propagation-topologies.md)
-- [Resilience with Faulty Agents](../literature/papers/multi-agent-resilience.md)
-
-**Optional:** Du et al. debate; sparse communication topology;
-[G-Designer](../literature/papers/g-designer.md) for learned graph design;
-[SAGA](../literature/papers/saga.md) for authorization. Use MetaGPT and ChatDev
-only as short rejected contrasts.
-
-**Debate:** When does another agent add information rather than another sample
-from the same error distribution? Compare graph sparsity, hierarchy, Challenger,
-and Inspector under correlated and malicious faults.
-
-## Week 8 — Self-correction, external evidence, and recovery
-
-**Primary**
-
-- [Large Language Models Cannot Self-Correct Reasoning Yet](../literature/papers/self-correction-limitations.md)
-- [CRITIC](../literature/papers/critic.md)
-
-**Short systems bridge:** Microreboot. **Optional:** Reflexion.
-
-**Debate:** Name the new information introduced by every correction loop. Then
-extend answer revision into systems recovery: what checkpoint, idempotency,
-rollback, or compensating action would be required after a real tool side effect?
-
-## Week 9 — Security by construction and runtime enforcement
-
-**Primary**
-
-- [CaMeL](../literature/papers/camel.md)
-- [AgentSpec](../literature/papers/agentspec.md)
-
-**Required background excerpt:** Saltzer and Schroeder. **Evaluation context:**
-[AgentDojo](../literature/papers/agentdojo.md). **Watch:** RefineAct after final ASE
-2026 proceedings/artifact review. **Optional architectures:**
-[ACE](../literature/papers/ace.md); [SAGA](../literature/papers/saga.md).
-
-**Debate:** Compare information/control-flow separation and capabilities with a
-general action-policy monitor. State each trusted computing base, policy gap,
-utility cost, and claim that is actually guaranteed.
-
-## Week 10 — Memory, persistent state, and frontier synthesis
-
-**Primary**
-
-- [Agentic Memory](../literature/papers/agentic-memory.md)
-- [How Memory Management Impacts LLM Agents](../literature/papers/memory-management-impact.md)
-
-**Short background:** MemGPT. **Cross-list:** LEGO-Prover as verified memory.
-
-**Debate:** Is learned store/retrieve/update/delete behavior enough to call
-memory a subsystem? Specify entry invariants, provenance, invalidation,
-confidentiality, and rollback for a memory whose retrieved errors change future
-actions. Distinguish answer-task rewards from deployable quality signals.
-
-The second half retains the frontier clinic. Groups choose Coscientist, ChemCrow,
-MLAgentBench, ChatEDA, OpenHands, or Murakkab and submit an authority diagram,
-failure model, independent validation/recovery design, matched simpler baseline,
-and a falsifying experiment.
-
-## Changes from the initial hypothesis
-
-- Split testing/repair from **oracle and specification quality** because
-  ImpossibleBench and manual patch audits show that test passage can reward the
-  wrong behavior.
-- Merged modern repository understanding with classical architecture recovery;
-  current retrieval/graph papers do not justify a standalone recovery week.
-- Made software-development agents cross-cutting and rejected a framework tour.
-- Downgraded systems/science/hardware to a frontier clinic until stronger
-  mechanism-comparison literature appears.
-- Elevated runtime enforcement/security to a full week because 2026 work now
-  supplies architectural mechanisms, not only attack benchmarks.
-- Added a focused memory week after ACL 2026 supplied complementary constructive
-  policy learning and controlled failure evidence; MemGPT is now background.
-- Replaced LEGO-Prover with PAT-Agent as Week 6's second primary to diversify
-  theorem-proving and model-checking/autoformalization mechanisms; LEGO-Prover
-  remains the verified-memory cross-reading.
-- Kept property-based testing embedded: formal property/specification generation
-  is now real, but full generator–property–shrinker maintenance is not mature.
-- Kept architecture recovery merged despite SemRef, and kept failure recovery as
-  a gap-driven week because no transactional agent-runtime counterexample was
-  found.
+Reuse one scenario throughout: the agent interprets an underspecified goal,
+observes `S0`, the world changes to `S1`, authority becomes stale, concurrent
+actions race, one irreversible effect commits, a later action fails, the agent
+retries, and a human approves a plausible but incomplete explanation. For every
+paper, identify its explicit state or relation, independent checker, trusted
+computing base, and the portion of this trace outside its guarantee.

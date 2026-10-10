@@ -1,8 +1,11 @@
-# Software Reflexion Models
+# Software Reflexion Models: Bridging the Gap Between Source and High-Level Models
 
 ## Decision
 
-**Strong foundational candidate.** Primary metadata: [ACM FSE 1995 DOI](https://doi.org/10.1145/222124.222136).
+**Background in v4; no longer primary.** Its abstraction remains valuable, but
+the compact course should not spend a primary slot on a non-agent 1995 paper
+merely to force architecture-recovery coverage. Primary metadata:
+[ACM FSE 1995 DOI](https://doi.org/10.1145/222124.222136).
 
 ## Problem and mechanism
 
@@ -16,4 +19,8 @@ The original work and follow-on implementation studies demonstrate interactive u
 
 ## Course role
 
-Use a short excerpt to discipline current claims. RepoGraph and RepoCoder expose structure and context; they do not recover architecture unless they posit a model and check it. A promising agentic research direction is to propose hypotheses or mappings while a reflexion engine computes explicit discrepancies.
+Use as an excerpt or instructor background to discipline current claims.
+RepoGraph and RepoCoder expose structure and context; they do not recover
+architecture unless they posit a model and check it. A promising agentic
+research direction is to propose hypotheses or mappings while a reflexion
+engine computes explicit discrepancies.

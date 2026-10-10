@@ -21,3 +21,9 @@ The code-search controller and termination remain model decisions; analysis is u
 ## Course role and comparisons
 
 Use as the best bridge from classic debugging to agentic repair. Compare with SWE-agent's general interface, Agentless's deterministic hierarchy, RepairAgent's finite-state control, and IRIS's tighter neuro-symbolic division of labor.
+
+## Reading-list v5 decision
+
+**Strong candidate, no longer primary.** Agentless already anchors the autonomy
+comparison; AutoCodeSherpa contributes the more distinct executable issue
+specification and independent patch-rejection mechanism.

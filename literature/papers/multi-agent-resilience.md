@@ -20,3 +20,9 @@ The mitigation mechanisms are explicit: a Challenger allows agents to contest ot
 ## Course role and comparisons
 
 Pair with information-propagation topology: one explains diffusion, the other tests containment and recovery. Compare the Inspector to an external verifier in CRITIC or AgentSpec; a model reviewer is not equivalent to a reference monitor.
+
+## Reading-list v5 decision
+
+**Strong candidate, no longer primary.** The fault-injection methodology remains
+excellent, but the Inspector and Challenger are not independent recovery or
+consistency mechanisms. LAS fills the more underexplored orchestration slot.

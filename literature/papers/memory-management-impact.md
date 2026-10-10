@@ -1,8 +1,8 @@
-# How Memory Management Impacts LLM Agents
+# How Memory Management Impacts LLM Agents: An Empirical Study of Experience-Following Behavior
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [ACL 2026 proceedings](https://aclanthology.org/2026.acl-long.27/).
+**Strong candidate and correctness background; not in the v3 primary 20.** Primary source: [ACL 2026 proceedings](https://aclanthology.org/2026.acl-long.27/).
 
 ## One-line idea
 

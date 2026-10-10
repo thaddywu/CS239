@@ -1,8 +1,12 @@
-# Understanding Information Propagation Effects of Communication Topologies
+# Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [EMNLP 2025 / ACL Anthology](https://aclanthology.org/2025.emnlp-main.623/).
+**Selected for v7 as the second multi-agent architecture reading.** Multi-agent
+design receives one week, with this paper covering communication topology and
+causal information flow after Evolving Orchestration covers agent selection and
+organization. Primary
+source: [EMNLP 2025 / ACL Anthology](https://aclanthology.org/2025.emnlp-main.623/).
 
 ## Problem and mechanism
 

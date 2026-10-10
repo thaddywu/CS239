@@ -104,3 +104,66 @@ The targeted systems/workflow search did not uncover a peer-reviewed LLM-agent
 runtime with explicit checkpoint boundaries, durable logs, idempotency keys,
 compensating actions, or exactly-once side-effect semantics. This absence is an
 important negative result and should remain a central Week 8 design exercise.
+
+## Final-selection v3 update — 2026-08-27
+
+The earlier “no transactional counterexample” judgment is overturned after a
+focused transaction/compensation and human-control search using vocabulary from
+database and workflow systems rather than only agent papers.
+
+- [Sagas](../literature/papers/sagas.md) supplies semantic compensation,
+  backward recovery, and forward recovery for visible partial execution.
+- [Beldi](../literature/papers/beldi.md) supplies intent logs, exactly-once
+  re-execution, invocation identifiers, and distributed transactional opacity
+  for mediated stateful workflows.
+- [Towards Adjustable Autonomy](../literature/papers/towards-adjustable-autonomy.md)
+  supplies planned transfer of control under response and coordination costs.
+
+Microreboot remains a strong background bridge, but Beldi and Sagas more
+directly address the agent scenario's repeated or irreversible external effects.
+Two exact-fit 2026 agent preprints—Cordon and Revisable by Design—were fully
+inspected and rejected as primaries pending peer review and broader evidence.
+
+## Reading-list v4 update — 2026-08-27
+
+Only one foundational transaction reading is assigned. Sagas is the default
+because semantic compensation best exposes open-world partial effects; Beldi is
+the implementation-oriented alternative for exactly-once replay and opacity in
+a mediated boundary. Newly checked agent-native work strengthens the gap rather
+than closing it at the primary-paper bar:
+
+- [ACRFence](../literature/papers/acrfence.md) models action replay and authority
+  resurrection after checkpoint restore;
+- [Temporary Authority, Permanent Effects](../literature/papers/temporary-authority-permanent-effects.md)
+  defines commit-time freshness, causal-priority, binding, and eligibility;
+- *Agentic Transaction* proposes semantic ACID guarantees.
+
+All three are 2026 preprints. Cordon's author metadata was also corrected against
+the current arXiv record. Peer-reviewed agent-native transaction and
+external-effect recovery remains an explicit gap.
+
+## Reading-list v5 update — 2026-08-27
+
+Sagas moves from primary to instructor background under the explicit recency
+rule. The mechanism is not repudiated: semantic compensation, forward recovery,
+and backward recovery still frame the final design exercise. The current
+peer-reviewed agent literature still does not integrate those ideas with durable
+intent logs, idempotency, isolation, heterogeneous tool state, and commit-time
+authority. No weak substitute is selected; Cordon, ACRFence, Agentic Transaction,
+and Temporary Authority remain evidence of an active preprint frontier.
+
+## Supplied-list transaction audit — 2026-08-28
+
+[Atomix](../literature/papers/atomix.md) is the clearest exact-fit modern answer
+found so far. It defines a tool-effect settlement boundary with sealed
+transaction footprints, read/effect scopes, per-resource progress frontiers,
+stale-read abort/retry, and distinct handling for bufferable, reversible, and
+irreversible effects. This is substantially more concrete than restoring agent
+memory or asking an LLM to compensate. It remains a preprint and therefore a
+frontier handout rather than a published primary.
+
+[SagaLLM](../literature/papers/sagallm.md) is peer reviewed at PVLDB 2025 but
+does not close the gap: its global validator and compensation agents are not a
+demonstrated durable transaction manager with isolation, idempotent replay, or
+crash-safe external-effect semantics. Publication status alone does not outweigh
+that mechanism/evidence mismatch.

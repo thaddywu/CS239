@@ -2,7 +2,8 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [ICLR 2026 proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ca688eb14e29701a11bdba6633186328-Abstract-Conference.html).
+**Selected in v7 as the sole evaluation-first exception.** Primary source:
+[ICLR 2026 proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ca688eb14e29701a11bdba6633186328-Abstract-Conference.html).
 
 ## Problem and mechanism
 
@@ -10,7 +11,12 @@ Ordinary coding benchmarks reward passing tests even when the implementation vio
 
 ## Evidence and limits
 
-The benchmark directly measures a failure hidden by pass rates and shows that models exploit available test information under multiple settings. Its synthetic contradictions give a clean diagnostic but are more obvious than many real ambiguities, stale tests, or tacit requirements. A refusal or escalation may be the correct behavior, which means agent evaluation needs outcomes beyond “patch submitted.”
+The benchmark directly measures a failure hidden by pass rates and studies how
+prompts, read/write versus hidden tests, iterative feedback, abort/escalation,
+and transcript monitors change that failure. Its synthetic contradictions give
+a clean diagnostic but are more obvious than many real ambiguities, stale tests,
+or tacit requirements. A refusal or escalation may be the correct behavior,
+which means agent evaluation needs outcomes beyond “patch submitted.”
 
 ## Course role and comparisons
 

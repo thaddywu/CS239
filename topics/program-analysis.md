@@ -114,3 +114,49 @@ artifacts, but they reinforce rather than overturn the core responsibility split
 the model proposes semantic facts and deterministic analysis checks a narrower
 relation. The topic supports a merged neuro-symbolic week, not a broad standalone
 survey of every analysis family.
+
+## Final-selection v3 update — 2026-08-27
+
+IRIS, CodePlan, Software Reflexion Models, and MSG all enter the final 20, but
+each analysis has a different semantic contract: taint reachability, edit impact,
+architecture discrepancy, and selective inlining for contract generation. This
+is sufficient breadth for program analysis to remain a cross-theme spine rather
+than a separate survey block.
+
+## Reading-list v5 update — 2026-08-27
+
+The earlier “merged spine” judgment is strengthened into a dedicated mechanism
+block:
+
+- [NESA](../literature/papers/nesa.md): restricted Datalog fixed points over
+  parser and neural relations;
+- [Gordian](../literature/papers/gordian.md): solver-aiding ghost code with
+  KLEE/Z3 and original-program witness checks;
+- [HoarePrompt](../literature/papers/hoareprompt.md): natural-language strongest
+  postconditions and k-induction without a formal guarantee;
+- [IRIS](../literature/papers/iris.md): model-generated taint specifications
+  with CodeQL-owned reachability;
+- [RFCAudit](../literature/papers/rfcaudit.md): hierarchical semantic indexing
+  and demand-driven conformance queries.
+
+[LogicLoc](../literature/papers/logicloc.md), [ACTaint](../literature/papers/actaint.md),
+[Semia](../literature/papers/semia.md), and [Deductive Steering](../literature/papers/deductive-steering.md)
+are recorded challengers. Deductive Steering is the closest program-synthesis/
+invariant-generation result, but only abstract-level evidence was available.
+The common
+unresolved question is whether omitted or hallucinated neural facts can be
+detected independently; deterministic downstream execution alone does not give
+semantic completeness.
+
+## Final adversarial review — 2026-08-28
+
+HoarePrompt is no longer primary. Full inspection showed prompted CFG state
+summaries, three loop unrolls followed by model generalization, and a model-owned
+final entailment classification—not sound strongest-postcondition transfer or
+k-induction. [LemmaNet](../literature/papers/lemmanet.md) takes the slot because
+source-level understanding produces helper lemmas that must be proved and then
+used to discharge the original Frama-C VC in Rocq.
+
+The retained analysis spine is NESA → Gordian/IRIS → RFCAudit, with LemmaNet
+cross-listed as the exact-verification endpoint. LogicLoc, ACTaint, Semia, and
+Deductive Steering remain explicit challengers, not silent deletions.

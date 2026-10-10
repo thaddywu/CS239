@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [IEEE SaTML 2026 author record](https://www.floriantramer.com/publications/camel25/).
+**Strong alternate after the v7 audit.** Primary source: [IEEE SaTML 2026 author record](https://www.floriantramer.com/publications/camel25/).
 
 ## Problem and mechanism
 
@@ -22,4 +22,10 @@ The planner can mistranslate ambiguous user intent, supported programs/tools req
 
 ## Course role
 
-Pair with Saltzer–Schroeder concepts and AgentDojo evidence. Compare AgentSpec: CaMeL constrains information/control flow by construction; AgentSpec monitors domain rules over action traces.
+CaMeL remains technically excellent; it was not removed for lack of depth.
+V7 chooses ACE because ACE exposes the trusted-plan-to-static-check-to-isolated-
+execution path as one end-to-end security architecture and has a stronger
+systems-security publication record. CaMeL is the first replacement if the
+instructor prefers its privileged/quarantined-model split and provenance-aware
+capabilities. Compare AgentSpec: CaMeL constrains information/control flow by
+construction; AgentSpec monitors domain rules over action traces.

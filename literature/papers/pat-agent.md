@@ -2,7 +2,7 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [ASE 2025 proceedings DOI](https://doi.org/10.1109/ASE63991.2025.00176).
+**Strong candidate; DSP receives the v3 proof-decomposition slot.** Primary source: [ASE 2025 proceedings DOI](https://doi.org/10.1109/ASE63991.2025.00176).
 
 ## One-line idea
 

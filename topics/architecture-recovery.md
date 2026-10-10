@@ -116,3 +116,41 @@ directly improves recovered architectures and tests against ground truth. One
 LLM-assisted refinement system does not yet provide enough independent
 mechanisms for a standalone week, and its final proceedings/DOI record was not
 located. Repository understanding remains well supported as a merged module.
+
+## Final-selection v3 update — 2026-08-27
+
+[Software Reflexion Models](../literature/papers/software-reflexion-models.md)
+is promoted to a full primary day. A new targeted check also found *A Holistic
+Approach to Design Understanding Through Concept Explanation* (TSE 2025), but
+only its abstract and metadata were inspectable in this pass, so it is recorded
+as `skimmed` rather than promoted. SemRef remains the most direct modern LLM
+candidate but still lacks a final proceedings record. The final sequence uses
+CodePlan for changing edit obligations, IRIS for whole-program dataflow, and
+reflexion models for explicit high-level hypotheses and discrepancy semantics.
+
+## Reading-list v4 update — 2026-08-27
+
+Software Reflexion Models moves to background rather than consuming a primary
+slot. The focused modern check added three decision points:
+
+- [RepoProbe](../literature/papers/repoprobe.md) supplies strong negative
+  evidence and a checklist-based architecture-understanding benchmark, but no
+  recovery mechanism.
+- [Automated Software Architecture Design Recovery](../literature/papers/automated-architecture-design-recovery.md)
+  evaluates prompting and self-reflection but does not isolate a deep agentic
+  abstraction.
+- [Can Agents reconstruct microservice architecture?](../literature/papers/can-agents-reconstruct-microservice-architecture.md)
+  is an informative early negative result with a lightweight role-guided method.
+
+The primary readings are therefore CodePlan and IRIS. The absence of a modern
+agentic recovery paper at the required depth is recorded as a literature gap,
+not filled with a weaker paper.
+
+## Reading-list v5 update — 2026-08-27
+
+The decision is upheld but the previous “CodePlan and IRIS are the primary
+readings” statement is superseded. The generic understanding block is removed;
+IRIS remains under program analysis, CodePlan becomes a strong maintenance
+alternative, and RepoProbe remains negative evaluation background. No newly
+screened 2023--2026 recovery paper supplied a maintained architecture model or
+analysis mechanism strong enough to force this topic back into the syllabus.

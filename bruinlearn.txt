@@ -1,0 +1,44 @@
+Fall 2026
+
+Computer Science (COM SCI)
+COM SCI 239 - Current Topics in Computer Science: Programming Languages and Systems: Agentic Software Engineering
+
+Lecture: Lec 3
+
+Class ID: 587232203
+
+Class Website: N/A
+
+Textbooks 
+
+Status	Waitlist Status	Day(s)	Time in Pacific Time	Location	Units	Instructor(s)
+Closed: Class Full (15)	Waitlist Full (5)	TR	10am-11:50am	Mathematical Sciences Room 5233	4.0	Kim, M.
+Final Exam Information
+
+Date	Day	Time	Location(s)
+None listed	---	Consult instructor for method of evaluation	---
+Enrollment Information
+
+Grade Type	Restrictions	Impacted	Individual Studies	Level
+Letter Grade	Class:
+Graduate Students	No	N/A	Graduate
+Course Description
+
+Lecture, four hours; outside study, eight hours. Review of current literature in area of computer science programming languages and systems in which instructor has developed special proficiency as consequence of research interests. May be repeated for credit with topic change. Letter grading.
+
+Class Description
+
+Comprehensive overview of agentic software development frameworks. Exploration of how autonomous artificial intelligence (AI) agents can design, code, and maintain software systems. With rigorous focus on AI safety and reliability, students examine advanced assurance techniques including runtime validation, automated software testing, and property-based testing tailored for AI-driven environments. Class is primarily discussion-based, centering on critical analysis of latest research papers and state-of-the-art developments in this rapidly evolving domain. Through literature-driven approach, students gain both theoretical foundation and practical insights into engineering resilient, predictable, and aligned autonomous software agents.
+
+General Education (GE)
+
+This class does not satisfy any GE requirements.
+
+Diversity
+
+This class does not satisfy any College/School diversity requirement.
+
+Class Notes
+
+Students who enroll in upper-division courses offered by the Samueli School without completing the requisites are subject to disenrollment after the second class meeting.
+If necessary, consult with an OASA counselor through MyUCLA Message Center.

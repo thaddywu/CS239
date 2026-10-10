@@ -2,7 +2,8 @@
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [OSDI 2026 proceedings](https://www.usenix.org/conference/osdi26/presentation/chaudhry).
+**Strong systems background; removed from the v4 primary list.** Primary source:
+[OSDI 2026 proceedings](https://www.usenix.org/conference/osdi26/presentation/chaudhry).
 
 ## One-line idea
 
@@ -29,6 +30,7 @@ not another prompting pattern.
 
 ## Course role
 
-Best systems paper for the runtime/harness topic. It adds a missing design point:
-the agent graph is an optimizable program whose execution policy belongs outside
-the model.
+Strong background for workflow serving: the agent graph is an optimizable
+program whose execution policy belongs outside the model. It is not the v4
+architecture primary because it says little about agent communication, shared
+state, synchronization, delegation, or fault propagation.

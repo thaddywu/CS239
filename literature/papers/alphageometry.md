@@ -1,8 +1,8 @@
-# Solving Olympiad Geometry without Human Demonstrations (AlphaGeometry)
+# Solving olympiad geometry without human demonstrations
 
 ## Decision
 
-**Selected for the final 20-paper-day list.** Primary source: [Nature 2024](https://www.nature.com/articles/s41586-023-06747-5).
+**Strong frontier/application candidate; not in the v3 primary 20.** Primary source: [Nature 2024](https://www.nature.com/articles/s41586-023-06747-5).
 
 ## Problem and mechanism
 
